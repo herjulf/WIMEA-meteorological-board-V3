@@ -57,7 +57,9 @@ gschem and pcb. I2C bus is available on many platforms, Arduino, Raspberry Pi an
 * gerber files for fabrication
 * various pictures
 
-![Component side] (./pictures/board-back.png)
+![Back side] (./pictures/board-back.png)
+
+![Component side] (./pictures/board.png)
 
 
 Schematics
