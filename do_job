@@ -1,0 +1,8 @@
+#
+#gsch2pcb --skip-m4 --use-files -d ~/gaf/footprints -d ~/gaf/pcb-elements -d /usr/share/pcb/pcblib-newlib/geda  -d /usr/local/share/pcb/pcblib-newlib  project 
+gsch2pcb --skip-m4 --use-files -d ~/gaf/footprints -d ~/gaf/pcb-elements -d /usr/local/share/pcb/pcblib-newlib  -d /usr/share/pcb/pcblib-newlib  project 
+#gnetlist -g drc2   -o drc_output.txt  dboard.sch   
+#gnetlist -g spice-sdb                 dboard.sch
+#gnetlist -g partslist1 -o output.bom  dboard.sch
+
+

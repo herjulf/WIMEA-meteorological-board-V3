@@ -1,0 +1,7 @@
+(component-library "${HOME}/gaf/gschem-sym")
+(component-library "${HOME}/gaf/gschem-sym/avr")
+(component-library "${HOME}/gaf/gschem-sym/op")
+(component-library "${HOME}/gaf/gschem-sym/misc")
+(component-library "${HOME}/gaf/gschem-sym/one-wire")
+
+
