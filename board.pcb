@@ -6,7 +6,7 @@ FileVersion[20091103]
 PCB["I2C D-board 1.2" 39.0000mm 12.0000mm]
 
 Grid[1.000000 0.0007mm 0.0013mm 0]
-Cursor[1.0805mm 0.8103mm 0.000000]
+Cursor[0.0000 2.5175mm 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[0.1900mm 0.1900mm 0.1900mm 0.1900mm 12.00mil 0.1900mm]
@@ -799,8 +799,6 @@ Attribute("PCB::grid::size" "0.01mil")
 Attribute("import::src0" "(null)")
 Via[1.4604mm 10.3315mm 28.00mil 0.4000mm 0.0000 0.3049mm "" ""]
 Via[7.1856mm 4.4265mm 60.00mil 20.00mil 0.0000 35.00mil "" "thermal(4X)"]
-Via[11.2901mm 10.1890mm 28.00mil 0.4000mm 0.0000 0.3049mm "" "auto"]
-Via[403.35mil 8.8800mm 28.00mil 0.4000mm 0.0000 0.3049mm "" "auto"]
 
 Element["" "0805" "C4" "0.1uF" 7.4074mm 93.59mil -0.8994mm -92.37mil 0 100 ""]
 (
@@ -808,22 +806,6 @@ Element["" "0805" "C4" "0.1uF" 7.4074mm 93.59mil -0.8994mm -92.37mil 0 100 ""]
 	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
 	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
 	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
-
-	)
-
-Element["onsolder" "MY_BRD_6_100_38.fp" "CON_I2C" "unknown" 1.4604mm 2.7115mm 1.4252mm -45.53mil 0 100 "auto"]
-(
-	Pin[0.0000 0.0000 68.00mil 30.00mil 73.00mil 38.00mil "4" "4" "edge2,thermal(3X)"]
-	Pin[0.0000 100.00mil 68.00mil 30.00mil 73.00mil 38.00mil "3" "3" "edge2"]
-	Pin[0.0000 200.00mil 68.00mil 30.00mil 73.00mil 38.00mil "2" "2" "edge2"]
-	Pin[0.0000 300.00mil 68.00mil 30.00mil 73.00mil 38.00mil "1" "1" "edge2"]
-	Pin[1400.00mil 200.00mil 68.00mil 30.00mil 73.00mil 38.00mil "6" "6" "edge2,thermal(0X,3X)"]
-	Pin[1400.00mil 300.00mil 68.00mil 30.00mil 73.00mil 38.00mil "5" "5" "edge2"]
-	ElementLine [-50.00mil -50.00mil 50.00mil -50.00mil 15.00mil]
-	ElementLine [50.00mil 350.00mil 50.00mil -50.00mil 15.00mil]
-	ElementLine [-50.00mil 350.00mil 50.00mil 350.00mil 15.00mil]
-	ElementLine [-50.00mil 350.00mil -50.00mil -50.00mil 15.00mil]
-	ElementLine [1450.00mil 350.00mil 1450.00mil -50.00mil 15.00mil]
 
 	)
 
@@ -839,16 +821,7 @@ Element["" "SOT23" "J1" "IRLML6401" 5.4678mm 9.0696mm 0.3355mm -185.48mil 0 100 
 
 	)
 
-Element["" "sht2x-filtercap.fp" "" "unknown" 12.7792mm 7.4585mm 73.00mil 0.0000 3 70 ""]
-(
-	Pin[-101.00mil 101.00mil 0.0000 41.00mil 41.00mil 41.00mil "1" "1" "hole"]
-	Pin[101.00mil 101.00mil 0.0000 41.00mil 41.00mil 41.00mil "2" "2" "hole"]
-	Pin[101.00mil -101.00mil 0.0000 41.00mil 41.00mil 41.00mil "3" "3" "hole"]
-	Pin[-101.00mil -101.00mil 0.0000 41.00mil 41.00mil 41.00mil "4" "4" "hole"]
-
-	)
-
-Element["" "MY-TDFN-6.fp" "U2" "unknown" 12.6900mm 7.3508mm -0.6071mm 2.8026mm 0 100 ""]
+Element["" "MY-TDFN-6.fp" "U2" "unknown" 34.3829mm 6.1123mm -0.6409mm 3.9169mm 0 100 ""]
 (
 	Pad[48.00mil 37.00mil 66.00mil 37.00mil 15.00mil 30.00mil 21.00mil "SDA" "1" "square,edge2"]
 	Pad[48.00mil 0.0000 66.00mil 0.0000 15.00mil 30.00mil 21.00mil "GND" "2" "square,edge2"]
@@ -862,6 +835,55 @@ Element["" "MY-TDFN-6.fp" "U2" "unknown" 12.6900mm 7.3508mm -0.6071mm 2.8026mm 0
 	ElementLine [-80.00mil 80.00mil 48.00mil 80.00mil 10.00mil]
 	ElementLine [48.00mil 80.00mil 80.00mil 48.00mil 10.00mil]
 	ElementLine [80.00mil -80.00mil 80.00mil 48.00mil 10.00mil]
+
+	)
+
+Element["" "sht2x-filtercap.fp" "" "unknown" 34.3746mm 6.0742mm 73.00mil 0.0000 3 70 ""]
+(
+	Pin[-101.00mil 101.00mil 0.0000 41.00mil 41.00mil 41.00mil "1" "1" "hole"]
+	Pin[101.00mil 101.00mil 0.0000 41.00mil 41.00mil 41.00mil "2" "2" "hole"]
+	Pin[101.00mil -101.00mil 0.0000 41.00mil 41.00mil 41.00mil "3" "3" "hole"]
+	Pin[-101.00mil -101.00mil 0.0000 41.00mil 41.00mil 41.00mil "4" "4" "hole"]
+
+	)
+
+Element["" "sht2x-filtercap.fp" "" "unknown" 34.3274mm 6.0740mm 1.8475mm 0.0438mm 3 70 ""]
+(
+	Pin[0.0000 3.6280mm 0.0000 41.00mil 41.00mil 41.00mil "1" "1" "hole"]
+	Pin[3.6280mm 0.0000 0.0000 41.00mil 41.00mil 41.00mil "2" "2" "hole"]
+	Pin[0.0000 -3.6280mm 0.0000 41.00mil 41.00mil 41.00mil "3" "3" "hole"]
+	Pin[-3.6280mm 0.0000 0.0000 41.00mil 41.00mil 41.00mil "4" "4" "hole"]
+
+	)
+
+Element["" "MY_HDR_4_100_38.fp" "CON_I2C" "unknown" 1.7558mm 2.5662mm -46.74mil -2.4541mm 0 100 ""]
+(
+	Pin[0.0000 0.0000 68.00mil 30.00mil 73.00mil 38.00mil "1" "1" ""]
+	Pin[0.0000 100.00mil 68.00mil 30.00mil 73.00mil 38.00mil "2" "2" ""]
+	Pin[0.0000 200.00mil 68.00mil 30.00mil 73.00mil 38.00mil "3" "3" ""]
+	Pin[0.0000 300.00mil 68.00mil 30.00mil 73.00mil 38.00mil "4" "4" ""]
+	ElementLine [-50.00mil -50.00mil 50.00mil -50.00mil 15.00mil]
+	ElementLine [-50.00mil -50.00mil -50.00mil 350.00mil 15.00mil]
+	ElementLine [-50.00mil 350.00mil 50.00mil 350.00mil 15.00mil]
+	ElementLine [50.00mil -50.00mil 50.00mil 350.00mil 15.00mil]
+
+	)
+
+Element["" "sht2x-filtercap.fp" "" "unknown" 22.6532mm 5.9776mm 0.0000 -73.00mil 0 70 ""]
+(
+	Pin[101.00mil 101.00mil 0.0000 41.00mil 41.00mil 41.00mil "1" "1" "hole"]
+	Pin[101.00mil -101.00mil 0.0000 41.00mil 41.00mil 41.00mil "2" "2" "hole"]
+	Pin[-101.00mil -101.00mil 0.0000 41.00mil 41.00mil 41.00mil "3" "3" "hole"]
+	Pin[-101.00mil 101.00mil 0.0000 41.00mil 41.00mil 41.00mil "4" "4" "hole"]
+
+	)
+
+Element["" "sht2x-filtercap.fp" "" "unknown" 22.5616mm 237.40mil -0.1617mm -1.7544mm 0 70 ""]
+(
+	Pin[3.6280mm 0.0000 0.0000 41.00mil 41.00mil 41.00mil "1" "1" "hole"]
+	Pin[0.0000 -3.6280mm 0.0000 41.00mil 41.00mil 41.00mil "2" "2" "hole"]
+	Pin[-3.6280mm 0.0000 0.0000 41.00mil 41.00mil 41.00mil "3" "3" "hole"]
+	Pin[0.0000 3.6280mm 0.0000 41.00mil 41.00mil 41.00mil "4" "4" "hole"]
 
 	)
 Layer(1 "component")
@@ -878,55 +900,30 @@ Layer(1 "component")
 	Line[1.6283mm 10.1636mm 1.4604mm 10.3315mm 18.00mil 20.00mil "clearline"]
 	Line[6.4912mm 2.4722mm 6.4912mm 3.7321mm 18.00mil 20.00mil "clearline"]
 	Line[6.4912mm 3.7321mm 7.1490mm 4.3899mm 18.00mil 20.00mil "clearline"]
-	Line[1.4604mm 2.7115mm 1.4604mm 2.5319mm 18.00mil 20.00mil "clearline"]
+	Line[1.6753mm 2.5764mm 1.4604mm 2.5319mm 18.00mil 20.00mil "clearline"]
 	Line[327.06mil 93.59mil 327.06mil 1.3247mm 18.00mil 20.00mil "clearline"]
 	Line[327.06mil 1.3247mm 7.6565mm 0.6739mm 18.00mil 20.00mil "clearline"]
 	Line[7.6565mm 0.6739mm 2.5681mm 0.6739mm 18.00mil 20.00mil "clearline"]
-	Line[2.5681mm 0.6739mm 1.7005mm 1.5416mm 18.00mil 20.00mil "clearline"]
+	Line[2.6019mm 0.5050mm 1.7005mm 1.5416mm 18.00mil 20.00mil "clearline"]
 	Line[1.7005mm 1.5416mm 1.7005mm 2.4036mm 18.00mil 20.00mil "clearline"]
-	Line[1.7005mm 2.4036mm 1.4604mm 2.6437mm 18.00mil 20.00mil "clearline"]
+	Line[1.7005mm 2.4036mm 1.6753mm 2.4410mm 18.00mil 20.00mil "clearline"]
 	Line[11.2422mm 7.3508mm 8.1178mm 7.3508mm 18.00mil 20.00mil "clearline"]
 	Line[8.1178mm 7.3508mm 7.4490mm 8.0196mm 18.00mil 20.00mil "clearline"]
-	Line[14.8569mm 7.3508mm 14.3664mm 7.3508mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[14.8569mm 7.3508mm 14.8569mm 9.1679mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[14.8569mm 9.1679mm 14.3092mm 9.1679mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[14.3092mm 9.1679mm 14.3092mm 10.8446mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[14.3092mm 10.8446mm 5.4678mm 10.8446mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[5.4678mm 9.1458mm 5.4678mm 10.8446mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[1457.50mil 7.3508mm 1457.50mil 7.7915mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[1457.50mil 7.3508mm 14.3664mm 7.3508mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[13.9092mm 8.2906mm 13.7393mm 8.2906mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[13.7393mm 8.2906mm 13.7393mm 10.1890mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[13.7393mm 10.1890mm 11.2901mm 10.1890mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[11.0136mm 8.2906mm 403.35mil 8.2906mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[403.35mil 8.2906mm 403.35mil 8.8800mm 0.2000mm 0.4000mm "clearline,auto"]
 )
 Layer(2 "solder")
 (
-	Line[11.2901mm 10.1890mm 11.2901mm 10.8446mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[11.2901mm 10.8446mm 2.6240mm 10.8446mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[2.6240mm 8.6244mm 2.6240mm 10.8446mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[2.6240mm 8.6244mm 1.4604mm 8.6244mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[1.4604mm 7.7915mm 1.4604mm 8.6244mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[403.35mil 5.7138mm 403.35mil 8.8800mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[403.35mil 5.7138mm 1.4604mm 5.7138mm 0.2000mm 0.4000mm "clearline,auto"]
-	Line[1.4604mm 5.2515mm 1.4604mm 5.7138mm 0.2000mm 0.4000mm "clearline,auto"]
 )
 Layer(3 "outline")
 (
 )
 Layer(4 "GND")
 (
-	Polygon("clearpoly")
-	(
-		[0.0000 0.0000] [39.0001mm 0.0000] [39.0001mm 12.0000mm] [0.0000 12.0000mm] 
-	)
 )
 Layer(5 "V_BOARD")
 (
 	Polygon("clearpoly")
 	(
-		[0.3306mm 0.4120mm] [38.7431mm 0.4120mm] [38.7431mm 462.89mil] [0.3306mm 462.89mil] 
+		[0.2633mm 0.3106mm] [38.6758mm 0.3106mm] [38.6758mm 458.90mil] [0.2633mm 458.90mil] 
 	)
 )
 Layer(6 "signal1")
@@ -940,32 +937,29 @@ Layer(8 "signal3")
 )
 Layer(9 "outline")
 (
+	Polygon("clearpoly")
+	(
+		[0.0000 0.0000] [39.0001mm 0.0000] [39.0001mm 12.0000mm] [0.0000 12.0000mm] 
+	)
 )
 Layer(10 "silk")
 (
-	Line[12.3652mm 2.6404mm 31.1256mm 2.6404mm 0.2000mm 0.4000mm "clearline"]
-	Text[3.3187mm 127.73mil 0 74 "GND" "clearline,onsolder"]
+	Text[3.3291mm 3.1077mm 0 74 "GND" "clearline,onsolder"]
 	Text[3.1703mm 426.12mil 0 74 "VCC" "clearline,onsolder"]
 	Text[126.54mil 322.36mil 0 74 "SDA" "clearline,onsolder"]
 	Text[129.21mil 5.7933mm 0 74 "SCL" "clearline,onsolder"]
-	Text[13.8742mm 1.5550mm 0 100 "1" "clearline,onsolder"]
-	Text[23.9051mm 1.5550mm 0 100 "3" "clearline,onsolder"]
-	Text[18.7152mm 1.5550mm 0 100 "2" "clearline,onsolder"]
-	Text[28.8820mm 1.5550mm 0 100 "4" "clearline,onsolder"]
-	Text[33.3438mm 315.97mil 0 74 "GND" "clearline,onsolder"]
-	Text[24.8552mm 3.9106mm 0 73 "AD +-2.048V" "clearline,onsolder"]
-	Text[24.8537mm 454.10mil 0 73 "Measurement  Board " "clearline,onsolder"]
-	Text[21.7994mm 403.73mil 0 73 "SHT25  MS5611  MCP3424" "clearline,onsolder"]
-	Text[21.9378mm 8.9347mm 0 73 "2015 Rev 1.2" "clearline,onsolder"]
+	Text[9.4496mm 5.1346mm 0 73 "AD +-2.048V" "clearline,onsolder"]
+	Text[7.1687mm 454.10mil 0 73 "Measurement  Board " "clearline,onsolder"]
+	Text[7.1007mm 397.07mil 0 73 "SHT25  BME280  MCP3421" "clearline,onsolder"]
+	Text[7.1913mm 1.7880mm 0 73 "2018 Rev 1.0" "clearline,onsolder"]
 	Text[7.0975mm 8.2726mm 0 100 "VCC MAX 3.6V" "clearline,onsolder"]
 )
 Layer(11 "silk")
 (
-	Text[2.6099mm 4.1121mm 0 62 "SCL" "clearline"]
-	Text[2.6426mm 7.1697mm 0 62 "SDA" "clearline"]
-	Text[2.9802mm 0.9510mm 0 84 "GND" "clearline"]
-	Text[112.01mil 10.0942mm 0 84 "VCC" "clearline"]
-	Text[33.8087mm 6.8802mm 0 84 "GND" "clearline"]
+	Text[3.3231mm 4.6524mm 0 62 "SCL" "clearline"]
+	Text[3.1181mm 7.1913mm 0 62 "SDA" "clearline"]
+	Text[3.4178mm 1.8585mm 0 84 "GND" "clearline"]
+	Text[134.34mil 10.0404mm 0 84 "VCC" "clearline"]
 )
 NetList()
 (
