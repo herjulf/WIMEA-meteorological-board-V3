@@ -3,7 +3,7 @@
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20091103]
 
-PCB["I2C D-board 1.1" 39.0000mm 12.0000mm]
+PCB["I2C D-board 1.3" 39.0000mm 12.0000mm]
 
 Grid[0.01mil 0.0007mm 0.0013mm 0]
 PolyArea[200000000.000000]
@@ -1174,7 +1174,7 @@ Layer(6 "bottom silk" "silk")
 	Text[328.48mil 375.03mil 0 73 "AD +-2.048 Volt" "clearline,onsolder"]
 	Text[19.9043mm 468.52mil 0 73 "Meteorological  measurement  board " "clearline,onsolder"]
 	Text[887.85mil 73.18mil 0 73 "BME280                  SHT25" "clearline,onsolder"]
-	Text[700.70mil 3.3354mm 0 73 "2018 Rev 1.0" "clearline,onsolder"]
+	Text[700.70mil 3.3354mm 0 73 "2018 Rev 1.3" "clearline,onsolder"]
 	Text[0.4235mm 1.0280mm 0 54 "VCC MAX 3.6V" "clearline,onsolder"]
 	Text[9.0138mm 1.8306mm 0 73 "MCP3421" "clearline,onsolder"]
 )
