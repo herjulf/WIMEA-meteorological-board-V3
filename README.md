@@ -1,16 +1,15 @@
 
-I2C meteorological break-out board V2
-====================================
+I2C meteorological break-out board V3
+=====================================
 
-News i V2
+News i V3
 ---------
-* Filtercap option for SH25. Custom footprint created.
-* Polarity protection via P-FET
-* All components on one side 
-* Better PCB routing
-* All AD inputs are differential
-* Reworked pin headers for easier assembly
-
+* Third generation/revision of project daughterboard
+* Using one channel ADC MCP3421 for more compact design
+* Side-by-side BME280 for evaluation. Uses I2C address 0x76
+* T/RH chips at edge of chip for better air-flow 
+* Thermal barrier for T/RH to minimize heating from other components.
+* MS5611 for Pressure is removed and replaced by BME280 on sensornode.
 
 Introduction
 ------------
@@ -38,15 +37,14 @@ The sensor selection
 * SHT25 (Sensiron)  Temp, RH and via calculation AH, temp dew-point, heat index.
 http://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity/Sensirion_Humidity_SHT25_Datasheet_V3.pdf
 
-* MS5611 (Measurements Specialists) Atmospheric Pressure
-http://www.meas-spec.com/downloads/MS5611-01BA03.pdf
+* Optional. BOSH BME280. T/RH/P
+https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001-19.pdf
 
-* MCP3424 (4 channel. Hi-Res 18-bit ΔΣ ADC with Differential Input)
-http://ww1.microchip.com/downloads/en/DeviceDoc/22088b.pdf
+* MCP3421 (1 channel. Hi-Res 18-bit ΔΣ ADC with Differential Input)
+http://ww1.microchip.com/downloads/en/DeviceDoc/22003b.pdf
 
 The selected sensors are proposed by Joachim Reuder, Björn Pehrson, Robert 
-Olsson. Very useful information has come form the paparazzi project and special thanks to Martin Mueller for testing the pressure sensors.
-
+Olsson and WIMEA team. Thanks to N.N for testing the pressure/BME280 sensor.
 
 The PCB
 --------
